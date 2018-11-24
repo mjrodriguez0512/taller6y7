@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="75dp">
+
+
+        <ImageView
+            android:id="@+id/portada"
+            android:layout_width="209dp"
+            android:layout_height="205dp"
+            android:layout_below="@+id/nombre"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/serie1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="245dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/boton1"
+                android:text="Capitulo 1"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:id="@+id/boton2"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:text="Capitulo 2" />
+
+            <Button
+                android:id="@+id/boton3"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:text="Capitulo 3" />
+
+            <Button
+                android:id="@+id/boton4"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:text="Capitulo 4" />
+
+            <Button
+                android:id="@+id/boton5"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:text="Capitulo 5" />
+
+            <Button
+                android:id="@+id/boton6"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:text="Capitulo 7" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
